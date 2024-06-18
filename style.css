@@ -1,0 +1,34 @@
+div {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: colorChange 8s ease infinite;
+  }
+  
+.quadrado {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    animation: go-back 4s ;
+    animation-iteration-count: 4;
+  }
+  
+  @keyframes go-back {
+    0%{
+        background-color: blue;
+        transform: translateX(0px);
+    }
+    25%{
+        background-color: red;
+        transform: translateX(1800px);
+    }
+    50%{
+        background-color: green;
+        transform: translateX(1800px) translateY(850px);
+    }
+    75%{
+        background-color: yellow;
+        transform:  translateY(850px) translateZ(1800px);
+    }
+  }
+ 
